@@ -1,3 +1,4 @@
+const { SECRET_KEY = 'secretKey' } = process.env;
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/user');
@@ -66,7 +67,7 @@ const login = (req, res, next) => {
 
   return User.findUserByCredential(email, password)
     .then((user) => {
-      const token = jwt.sign({ id: user.id }, 'secretKey', { expiresIn: '7d' });
+      const token = jwt.sign({ id: user.id }, SECRET_KEY, { expiresIn: '7d' });
       res.send({ token });
     })
     .catch((err) => createErrorMessageUsers(req, res, err, next));

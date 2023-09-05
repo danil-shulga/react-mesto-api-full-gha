@@ -16,7 +16,7 @@ class SignApi {
     return this._request({
       url: `${this.baseUrl}/signup`,
       options: {
-        method: "POST",
+        method: 'POST',
         headers: this.headers,
         body: JSON.stringify({
           email: email,
@@ -30,7 +30,7 @@ class SignApi {
     return this._request({
       url: `${this.baseUrl}/signin`,
       options: {
-        method: "POST",
+        method: 'POST',
         headers: this.headers,
         body: JSON.stringify({
           password: password,
@@ -44,7 +44,7 @@ class SignApi {
     return this._request({
       url: `${this.baseUrl}/users/me`,
       options: {
-        method: "GET",
+        method: 'GET',
         headers: { ...this.headers, Authorization: `Bearer ${JWT}` },
       },
     });
@@ -52,8 +52,8 @@ class SignApi {
 }
 
 const signApi = new SignApi({
-  baseUrl: "http://localhost:3000",
-  headers: { "Content-Type": "application/json" },
+  baseUrl: 'http://localhost:4000',
+  headers: { 'Content-Type': 'application/json' },
 });
 
 export default signApi;

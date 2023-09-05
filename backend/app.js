@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -15,7 +15,7 @@ const auth = require('./middlewares/auth');
 const NotFoundError = require('./errors/NotFoundError');
 const errorHandler = require('./middlewares/error-handler');
 
-const { PORT = 3000, MESTO_DB = 'mongodb://0.0.0.0:27017/mestodb' } =
+const { PORT = 4000, MESTO_DB = 'mongodb://0.0.0.0:27017/mestodb' } =
   process.env;
 
 const app = express();

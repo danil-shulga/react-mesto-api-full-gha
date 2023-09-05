@@ -102,12 +102,14 @@ class Api {
   }
 
   changeLikeCardStatus(cardId, isLiked, JWT) {
-    return isLiked ? this._removeCardLike(cardId, JWT) : this._addCardLike(cardId, JWT);
+    return isLiked
+      ? this._removeCardLike(cardId, JWT)
+      : this._addCardLike(cardId, JWT);
   }
 }
 
 const api = new Api({
-  baseUrl: `http://localhost:3000`,
+  baseUrl: `http://localhost:4000`,
   headers: {
     'Content-Type': 'application/json',
   },
