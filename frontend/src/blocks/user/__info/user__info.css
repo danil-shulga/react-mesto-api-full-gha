@@ -1,0 +1,16 @@
+.user__info {
+  max-width: calc(100% - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+
+}
+
+@media (max-width:530px) {
+  .user__info {
+    max-width: 100%;
+    margin-top: 27px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,18 @@
+.user__avatar-overlay {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+
+  width: 102%;
+  height: 102%;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0) url(../../../images/icon/icon_pen.svg) center/0 0 no-repeat;
+
+  transition: ease-in .2s;
+}
+
+.user__avatar-overlay:hover {
+  background: rgba(0, 0, 0, .8) url(../../../images/icon/icon_pen.svg) center/26px 26px no-repeat;
+  cursor: pointer;
+}

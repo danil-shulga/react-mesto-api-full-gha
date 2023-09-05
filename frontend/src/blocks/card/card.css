@@ -1,0 +1,13 @@
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 410px;
+  aspect-ratio: 281 / 360;
+
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+  overflow: hidden;
+}

@@ -1,0 +1,21 @@
+.card__delete {
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  right: 20px;
+
+  width: 18px;
+  height: 19px;
+
+  cursor: pointer;
+  border: 0;
+  background: rgba(0, 0, 0, 0) url(../../../images/icon/icon_trash.svg) center/contain no-repeat;
+  /* на белом фоне иконка не видна по этому добавил небольшую тень */
+  filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+
+  transition: .3s;
+}
+
+.card__delete:hover {
+  opacity: .6;
+}

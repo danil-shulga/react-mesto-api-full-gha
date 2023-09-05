@@ -1,0 +1,28 @@
+.cards__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: grid;
+  justify-content: center;
+
+  /* у меня возник вопрос по поводу работы minmax() почему когда я указываю максимальное значение в 1fr то все работает как нужно и карточки адаптивные, но если ставлю 400px то они становится фиксированными в 400px и не уменьшаются ? */
+  /* пытался сравнить с тем как это у меня реализованно в прошлой ПР где это работает корректно и даже копировал все свойства из нее но не помогло */
+  grid-template-columns: repeat(3, minmax(282px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(282px, 400px)); */
+
+  column-gap: 17px;
+  row-gap: 20px;
+}
+
+@media (max-width: 920px) {
+  .cards__list {
+    grid-template-columns: repeat(2, minmax(282px, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .cards__list {
+    grid-template-columns: repeat(1, minmax(282px, 1fr));
+  }
+}

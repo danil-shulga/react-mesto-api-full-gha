@@ -1,0 +1,18 @@
+.user__description {
+  margin: 10px 0 0;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.15;
+
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width:530px) {
+  .user__description {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,11 @@
+.popup__container_card-img {
+  width: auto;
+  height: auto;
+  max-width: 75vw;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: 0 0 0;
+  background: rgba(0, 0, 0, 0);
+}
+

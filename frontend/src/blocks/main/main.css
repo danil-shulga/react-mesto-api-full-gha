@@ -1,0 +1,9 @@
+.main {
+  flex: 1 1 auto;
+}
+
+@media (max-width: 920px) {
+  .main {
+    padding: 0 20px;
+  }
+}

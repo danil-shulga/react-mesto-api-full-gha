@@ -1,0 +1,10 @@
+.page__cards {
+  margin-top: 52px;
+}
+
+@media (max-width: 530px) {
+  .page__cards {
+    margin-top: 36px;
+  }
+}
+ 

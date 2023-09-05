@@ -1,0 +1,13 @@
+.card__btn {
+  width: 24px;
+  height: 24px;
+
+  align-self: center;
+  background: #fff url(../../../images/icon/icon_like-disable.svg) center/contain no-repeat;
+  border: 0;
+  transition: ease-in .2s;
+  cursor: pointer;
+}
+.card__btn:hover {
+  opacity: .5;
+}

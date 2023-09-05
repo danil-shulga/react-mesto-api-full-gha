@@ -1,0 +1,16 @@
+.card__img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 50% 50%;
+
+  cursor: pointer;
+  transition: linear .2s;
+}
+
+.card__img:hover {
+  transform: scale(105%);
+}
