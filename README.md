@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP: <158.160.73.107>
+IP 158.160.73.107
 
 Frontend https://danil-shulga-mesto.nomoredomainsicu.ru/
 
