@@ -109,7 +109,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: `http://localhost:4000`,
+  baseUrl: `http://api.danil-shulga-mesto.nomoredomainsicu.ru`,
   headers: {
     'Content-Type': 'application/json',
   },
