@@ -52,7 +52,7 @@ class SignApi {
 }
 
 const signApi = new SignApi({
-  baseUrl: 'http://api.danil-shulga-mesto.nomoredomainsicu.ru',
+  baseUrl: 'https://api.danil-shulga-mesto.nomoredomainsicu.ru',
   headers: { 'Content-Type': 'application/json' },
 });
 
